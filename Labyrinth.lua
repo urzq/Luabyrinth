@@ -22,7 +22,7 @@ function newLabyrinth(width, height)
 end
 
 function labyrinth:generatePaths()
-    local stack = Stack:create()
+    local stack = newStack()
     local curr = {x=2, y=2}
 
     self:makeFloor({r=200, g=70, b=0}, curr.x, curr.y)
